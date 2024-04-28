@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+          border-radius: 25px;
+          border: 5px solid chartreuse;
+          padding: 30px;
+          box-sizing: border-box;
+          width: 500px;
+          margin: auto;
+
+        }
+        .color
+        {
+            background-color: chartreuse;
+            font-size: large;
+            border-radius: 10px;
+        }
+        td
+        {
+            color: brown;
+        }
+        
+    </style>
+    <script>
+        function Add()
+        {
+            f.C.value=parseInt(f.A.value)+parseInt(f.B.value)
+        }
+        function Sub()
+        {
+            f.C.value=parseInt(f.A.value)-parseInt(f.B.value)
+        }
+        function Mult()
+        {
+            f.C.value=parseInt(f.A.value)*parseInt(f.B.value)
+        }
+        function Div()
+        {
+            f.C.value=parseInt(f.A.value)/parseInt(f.B.value)
+        }
+    </script>
+</head>
+<body>
+    <div class="outter">
+    
+    <form name="f">
+        
+        <table>
+            <h2 style="color:orangered;text-align: center;font-family: 
+            Verdana, Geneva, Tahoma, sans-serif;font-style: italic;"><u>Calculator</u></h2>
+          
+            <tr>
+                
+                <td>
+                    Enter The A Value:
+                     </td>
+                     <td>
+                        <input class="color"type="text" name="A" placeholder="enter the 'A' values">
+                     </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter The B Value:
+                             </td>
+                             <td>
+                                <input class="color" type="text" name="B" placeholder="enter the 'B' values">
+                             </td>
+                            </tr>
+                            <td>
+                                Result:
+                                 </td>
+                                 <td>
+                                    <input class="color" type="text" name="C" placeholder="result">
+                                 </td>
+                                </tr>
+                            <tr>
+                                <td>
+                         <input class="color" type="button" value="+" name="button1" onclick="Add()">
+                         <input class="color" type="button" value="-" name="button1" onclick="Sub()">
+                         <input class="color" type="button" value="*" name="button1" onclick="Mult()">
+                         <input class="color" type="button" value="/" name="button1" onclick="Div()">
+                         <input class="color" type="reset" value="reset" name="button1">
+                        </td>
+                    </tr> 
+                   
+        </table>
+    </form>
+</div>
+</body>
+</html>
